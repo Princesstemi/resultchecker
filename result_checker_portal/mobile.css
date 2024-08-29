@@ -1,0 +1,56 @@
+@media(max-width:450px){
+    
+     header{
+        padding: 5px 5px;
+    }
+    
+    .brand{
+        width: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:15px
+    }
+    
+    .brand img{
+        margin-left:15px;
+    }
+
+    .brand b{
+        font-size: 15px;
+    }
+    
+    nav{
+        display: flex;
+        gap:20px;
+    }
+
+    nav a{
+        font-size: 10px;
+    }
+
+    .student-input{
+        width: 80%;
+    }
+    
+    /* result styling starts here */
+    .result{
+        width: 80%;
+        height: 70%;
+        gap:13px;
+    }
+    
+    .bottom{
+        margin-top: 35px;
+    }
+    
+    footer{
+        height: 20px;
+        margin-top: 33px;
+    }
+    
+    footer p{
+        font-size: 10px;
+        color:rgb(79, 3, 3);
+    }
+}

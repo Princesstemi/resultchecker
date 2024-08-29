@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: wheat;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(79, 3, 3);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px
+}
+
+.brand b{
+    color:wheat;
+}
+
+.brand img{
+    width: 30px;
+}
+
+nav{
+    display: flex;
+    gap:40px;
+}
+
+nav a{
+    color:wheat;
+}
+
+nav a:hover{
+    color:white;
+}
+
+
+main{
+    width: 100%;
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.student-input{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+
+.student-input h2{
+    color:rgb(79, 3, 3);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.error{
+    color:pink;
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+     display: none;
+}
+.student-input input{
+    width: 100%;
+    padding: 10px 20px;
+    border:1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.student-input input:focus{
+    border-color: rgb(79, 3, 3);
+}
+
+.student-input button{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid rgb(79, 3, 3);
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:wheat;
+    background-color: rgb(79, 3, 3);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.student-input button:hover{
+    background-color: brown;
+}
+
+
+/* result styling starts here */
+.result{
+    width: 50%;
+    height: 90%;
+    padding: 30px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.watermark {
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top span{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:15px
+}
+
+.top span img{
+    width: 25px;
+}
+
+.top span b{
+    font-size: 15px;
+}
+
+.top .passport{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.middle{
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+
+.middle span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+
+}
+
+.middle span .data{
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 1000;
+    font-size: 17px;
+}
+
+.middle span .value{
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.bottom img{
+    width: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bottom img:hover{
+    transform: scale(1.4);
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+footer p{
+    font-size: 10px;
+    color:rgb(79, 3, 3);
+}

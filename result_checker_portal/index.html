@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Checker</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+</head>
+<body>
+
+    <header>
+            <span class="brand">
+                   <img src="./images/logo.png" alt="" width="40">
+                   <b>UNILAG - AKOKA</b>
+            </span>
+
+            <nav>
+                   <a href="">Home</a>
+                   <a href="">About us</a>
+                   <a href="">Register</a>
+                   <a href="">Login</a>
+                   <a href="">Support</a>
+                   <a href="">Contact us</a>
+            </nav>
+    </header>
+    <main>
+            <section class="student-input">`
+                     <h2>Student Result Checker</h2>
+                     <!-- ERROR DISPLAY -->
+                     <small class="error"></small>
+                    <input type="text" placeholder="matric no." class="matric-no">
+                    <button class="check-btn">Check Result</button>
+            </section>
+            <section class="result">
+                <img src="./images/logo.png" alt="" class="watermark" width="200">
+                   <div class="top">
+                        <span class="brand2">
+                               <img src="./images/logo.png" alt="" width="100">
+                               <b>University of Lagos  (AKOKA)</b>
+                        </span>
+                        <img src="./images/avatart.png" alt="" class="passport" width="100">
+                   </div>
+                   <div class="middle">
+
+                    <span>
+                        <small class="data">Matric No.</small>
+                        <small class="value matric"></small>
+                    </span>
+                       <span>
+                           <small class="data">Firstname</small>
+                           <small class="value firstname"></small>
+                       </span>
+                       <span>
+                            <small class="data">Lastname</small>
+                            <small class="value lastname"></small>
+                       </span>
+
+                    <span>
+                        <small class="data">Gender</small>
+                        <small class="value gender"></small>
+                    </span>
+                      
+                       <span>
+                            <small class="data">Course</small>
+                            <small class="value course"></small>
+                       </span>
+                       <span>
+                                <small class="data">Score</small>
+                                <small class="value score"></small>
+                       </span>
+                       <span>
+                            <small class="data">Result</small>
+                            <small class="value remark"></small>
+                       </span>
+
+                   </div>
+                   <div class="bottom">
+                        <img src="./images/share.png" alt="" width="25">
+                        <img src="./images/download.png" alt="" width="25" class="downloadimg">
+                        <img src="./images/print.png" alt="" width="25">
+                        <img src="./images/close.png" alt="" width="25" class="close-btn" onclick="closebtn">
+                   </div>
+            </section>
+    </main>
+    <footer>
+       <p>&copy; Copyright <span class="year"></span>. All rights reserved. Powered by Codeprof Academy</p>
+    </footer>
+
+
+    <script src="database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
